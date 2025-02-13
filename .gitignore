@@ -1,5 +1,46 @@
-*.class
-*.log
+# scala 3
+.tasty
+*.tasty
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# sbt
+project/project/
+project/target/
+target/
+.vscode/
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
+.bsp
+.run/*
+
+# metals
+# build tool specific entries
+.bloop
+target
+project/project
+/.bsp/*
+.bloop
+.metals
+metals.mv.db
+metals.lock.db
+metals.sbt
+project/metals.sbt
+src/main/resources/serverkeystore.p12
+# PSQL Data
+postgres-data
+
+# mac
+.DS_Store
+
+# other?
+.history
+.scala_dependencies
+.cache-main
+
+#general
+*.class
+/.scala-build
+/kafka/logs
